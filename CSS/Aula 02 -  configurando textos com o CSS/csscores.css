@@ -1,0 +1,17 @@
+h1 {
+  color: aqua;
+  text-align: center;
+  background-color: black;
+}
+h2 {
+  color: #d63810;
+}
+ol {
+  color: #b90;
+}
+ul {
+  color: rgb(177, 11, 11);
+}
+P {
+  color: hsl(0, 50%, 20%);
+}
