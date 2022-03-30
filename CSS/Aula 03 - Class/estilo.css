@@ -7,8 +7,8 @@ body {
 h1 {
   background-color: #191970;
   color: #e6e6fa;
-  font-family: Georgia, "Times New Roman", serif;
   line-height: 200%;
+  font-family: Georgia, "Times New Roman", serif;
   text-shadow: 3px 3px 5px #cccccc;
 }
 h2 {
@@ -16,20 +16,25 @@ h2 {
   font-family: Georgia, "Times New Roman", serif;
   text-align: center;
 }
-
 p {
   font-size: 0.9em;
   text-indent: 3em;
+  background-color: royalblue;
 }
-
 ul {
   font-weight: bold;
+  color: orange;
 }
-
 footer {
-  font-family: "Courier New", Courier, monospace;
   color: #333333;
   font-size: 0.75em;
   font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+.cor_texto {
+  color: #c70000;
 }
 
+p.fundo {
+  background-color: sandybrown; 
+}
