@@ -1,0 +1,19 @@
+ol {
+    text-align: left;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 999;
+    line-height: 400%;
+    text-indent: 10%;
+}
+
+h3 {
+    font-style: oblique;
+    text-indent: 2%;
+}
+
+header {
+    text-align: center; text-shadow: 5px 4px 5px #c49;
+}
