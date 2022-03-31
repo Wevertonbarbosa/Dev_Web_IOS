@@ -1,0 +1,21 @@
+.melhores {
+  color: red;
+}
+h1 {
+  background-color: cadetblue;
+  font-style: italic;
+  text-shadow: 3px 3px 5px #cccccc;
+  text-align: center;
+  font-weight: bold;
+}
+p.subtitulo,
+h3.subtitulo {
+  background-color: black;
+}
+h3 {
+  color: white;
+  text-indent: 3%;
+}
+h3.times {
+  color: black;
+}
