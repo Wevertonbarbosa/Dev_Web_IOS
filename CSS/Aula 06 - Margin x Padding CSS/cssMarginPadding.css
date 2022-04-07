@@ -1,0 +1,39 @@
+body {
+    background-color: darkgray;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(141, 23, 2);
+    background-color: black;
+    padding: 20px;
+    border-right:5px red solid;
+    border-left:5px red solid;
+    border-top:5px red solid;
+    border-bottom: 5px red solid;
+    border-top-style: dashed;
+    margin-bottom: 50px;
+    border-top-color: royalblue;
+}
+
+.subtitulos {
+    text-indent: 20px;
+    margin: 2% 4%;
+}
+
+p {
+    margin-top: 20px;
+    margin-left: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-style: oblique;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 80px;
+}
+.teste{
+display: flex;
+margin-left: 500px;
+}
