@@ -8,13 +8,13 @@ h1 {
     color: rgb(141, 23, 2);
     background-color: black;
     padding: 20px;
-    border-right:5px red solid;
-    border-left:5px red solid;
-    border-top:5px red solid;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
     border-bottom: 5px red solid;
     border-top-style: dashed;
     margin-bottom: 50px;
-    border-top-color: royalblue;
+    border-top-color: red;
 }
 
 .subtitulos {
@@ -33,7 +33,25 @@ p {
     padding-right: 15px;
     padding-left: 80px;
 }
-.teste{
-display: flex;
-margin-left: 500px;
+
+.teste {
+    display: flex;
+    margin-left: 500px;
+}
+
+footer {
+    margin-top: 3%;
+    text-indent: 500px;
+    background-color: black;
+    color: red;
+    text-align: center;
+    border: 3px white solid;
+    padding: 10px;
+}
+
+.btn {
+text-decoration:double;
+color: floralwhite;
+padding: 10px 20px;
+border: 2px black solid;
 }
