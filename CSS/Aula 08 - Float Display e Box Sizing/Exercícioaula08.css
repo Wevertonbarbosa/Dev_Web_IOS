@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+Body {
+    padding: 2em;
+    background-color: bisque;
+}
+
+
+#btn {
+    padding: 4px;
+    margin-left: 40px;
+
+}
+
+.btn1 {
+    border-style: groove;
+    text-decoration: none;
+    color: black;
+    margin-right: 1.5em;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#img1 {
+    margin-top: 70px;
+}
+
+#parte1 {
+    padding: 20px;
+    border-width: 2%;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 2%;
+}
+
+#parte2 {
+    padding: 20px;
+    border-width: 2%;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 2%;
+    height: 300px;
+}
+
+#img2 {
+    float: left;
+   
+    
+
+}
+img{
+    width: 250px;
+    height: 250px;
+}
