@@ -121,6 +121,7 @@ Velozes e Furiosos 7 */
     width: 250px;
 }
 
+
 /* quinta parte lista ordenada */
 #parte5 {
     padding: 20px;
@@ -129,6 +130,10 @@ Velozes e Furiosos 7 */
     border-radius: 40px;
     margin: 2%;
     height: 300px;
+}
+
+#letras{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer {
