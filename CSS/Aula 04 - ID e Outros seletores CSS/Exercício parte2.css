@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    background-color: darkgray;
+    margin: 50px;
+}
+#imgsuperior{
+    width: 200px;
+}
+.img1{
+    float: left;
+    width: 50%;
+}
+#meio{
+    margin-top: 1%;
+}
