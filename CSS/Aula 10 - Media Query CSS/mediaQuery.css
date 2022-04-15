@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(https://nintendoboy.com.br/wp-content/uploads/2018/08/Pokemon-Logo-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 20px;
+    color: rgba(164, 205, 50, 0.801);
+}
+
+.col1 {
+    float: left;
+    width: 50%;
+    height: 30%;
+    box-sizing: border-box;
+    padding: 40px 250px;
+    font-size: 20px;
+}
+
+.lista1 {
+    background: #fff;
+    color: #555;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+li {
+    border: 1px solid rgba(255, 199, 13, 0.521);
+    background-color: rgba(21, 150, 182, 0.884);
+    color: black;
+    width: 500px;
+    padding: 5px;
+    
+}
+
+.título1 {
+    background-color: rgba(36, 36, 235, 0.322);
+    width: 504px;
+    padding: 8px;
+    color: black;
+    font-size: 25px;
+    border: 1px rgba(255, 199, 13, 0.521) solid;
+}
+
+.col2 li{
+    float: left;
+    width: 400px;
+    padding: 10px;
+    margin-left: 40px;   
+    list-style-type: none;
+}
