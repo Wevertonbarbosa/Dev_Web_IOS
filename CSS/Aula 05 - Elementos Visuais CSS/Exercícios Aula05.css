@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(https://www.musicasmaistocadas.club/app/wp-content/uploads/2020/07/50-Cent-Rapper-Hip-Hop-Music-2020-Musicas-mais-tocadas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align:justify;
+    text-indent: 4%;
+    border: 1px solid white;
+    color: rgba(7, 7, 7, 0.705);
+    width: 600px;
+    border-bottom-width: 7px;
+    border-right-width: 8px ;
+    border-radius: 20px;
+    font-family:fantasy;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+}
+
+main{
+    padding: 3em;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 25px;
+    font-style: oblique;
+    margin-inline-start: 40px;
+    margin-left: 50px;
+    color: rgb(47, 27, 158);
+    border-bottom: 2px solid rgb(255, 255, 255) ;
+    border-right: 4px solid black;
+    border-radius: 40px ;
+    font-weight: bold;
+}
+
+h2{
+    padding: 2px;
+    margin-top: 50px;
+    text-align: start;
+    font-family: 'Lobster', cursive;
+    font-size: 23px;
+    border-bottom: 1px black;
+    border-style: outset;
+    border-top-left-radius: 10px;
+    width: 75px;
+
+}
+
+p{
+    font-size: 1.4em;
+    font-family: 'Satisfy', cursive;
+    background-color: rgba(240, 248, 255, 0.425);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+ul{
+    font-size: 1.4em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(240, 248, 255, 0.425);
+    border-radius: 20px;
+}
+
+.titulo{
+    font-family: 'Berkshire Swash', cursive;
+}
+img{
+    width: 620px;
+    height: 340px;
+    border: 2px solid rgba(255, 255, 255, 0.589);
+    border-radius: 40px;
+}
+
+figure{
+    border: 2px solid black;
+    width: 625px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.425);
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    font-weight: 900;
+
+}
+
+footer{
+    text-align: center;
+    font-weight: 900;
+}
