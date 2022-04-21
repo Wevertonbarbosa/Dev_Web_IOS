@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+body {
+    padding: 2vw;
+    background-color: rgba(127, 255, 212, 0.479);
+}
+
+header {
+    text-align: center;
+    font-family: fantasy;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 20ex;
+    height: 7vh;
+    background-color: rgba(100, 148, 237, 0.651);
+    margin-bottom: 7vh;
+}
+
+h1::selection {
+    background-color: rgb(236, 19, 19);
+}
+
+img {
+    width: 40vw;
+    height: 50vh;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.Titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-indent: 25px;
+}
+
+p::selection {
+    background-color: rgba(34, 207, 86, 0.808);
+}
+
+p {
+    font-size: 20px;
+    width: 55vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p::first-letter {
+    background-color: blueviolet;
+    font-size: 28px;
+    color: aliceblue;
+    border-radius: 20px ;
+    border: 1px dashed black;
+}
+
+.btn {
+    font-size: 18px;
+    font-family: fantasy;
+    text-decoration: none;
+    margin-left: 15vw;
+    margin: 20vh 15vw;
+    color: black;
+    border-bottom: 3px dashed black;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+hr {
+    margin: 8vh 0;
+}
+
+h3 {
+    text-indent: 5vw;
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+ul li {
+    font-size: 20px;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.356);
+    border: 1px solid black;
+    text-indent: 10px;
+    width: 40vw;
+}
+
+li:first-child {
+    background-color: rgba(137, 43, 226, 0.555);
+}
+
+li:nth-child(odd) {
+    background-color: rgba(137, 43, 226, 0.555);
+}
+
+li::selection {
+    background-color: rgb(236, 19, 19);
+}
+
+footer{
+    text-align: center;
+}
+
+footer::selection {
+    background-color: rgb(236, 19, 19);
+}
+
