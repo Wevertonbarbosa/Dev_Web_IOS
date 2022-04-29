@@ -85,7 +85,7 @@ A menina de maiô verde está na quarta posição.
 A menina de maiô Branco está em uma das pontas
 
 RESPOSTA: 
-Menina 01 - Raquel - Maio Branco - FPS   - 11Anos - Suco de Laranja - Gato
-Menina 02 - Vivian - Maio Azul - FPS 55 - 10 Anos - Suco Limonada - passarinho
-Menina 03 - Bruna - Maio Amarelo - FPS 40 - 9 Anos - Suco maracujá - Cachorro 
-Menina 04 - Ana - Maio Verde - FPS 50 - 8 Anos - Suco de Morango - Peixe
+Menina 01 - Raquel - Maio Branco - FPS 40  - 11 anos - Suco de Laranja - Gato
+Menina 02 - Vivian - Maio Azul - FPS 55 - 10 anos - Suco Limonada - passarinho
+Menina 03 - Bruna - Maio Amarelo - FPS 45 - 9 anos - Suco maracujá - Cachorro 
+Menina 04 - Ana - Maio Verde - FPS 50 - 8 anos - Suco de Morango - Peixe
