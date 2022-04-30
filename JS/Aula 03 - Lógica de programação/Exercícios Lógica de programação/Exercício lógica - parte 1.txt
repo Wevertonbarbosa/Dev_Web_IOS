@@ -1,0 +1,91 @@
+1) Em um edifício com apartamentos somente nos andares de 1° ao
+4° , moram 4 meninas, em andares distintos: Joana, Yara, Kelly e
+Bete, não necessariamente nessa ordem. Cada uma delas tem
+um animal de estimação diferente: gato, cachorro, passarinho e
+tartaruga, não necessariamente nessa ordem. Bete vive
+reclamando do barulho feito pelo cachorro, no andar
+imediatamente acima do seu. Joana, que não mora no 4° , mora
+um andar acima do de Kelly, que tem o passarinho e não mora no
+2° andar. Quem mora no 3° andar tem uma tartaruga.
+
+
+KELLY MORA NO 1°ANDAR E TEM UM PASSARINHO
+JOANA NÃO MORA NO 4° (JOANA MORA NO 2° ANDAR) GATO
+BETY MORA 3° ANDAR (TEM UMA TARTARUGA)
+YARA MORA NO 4° E TEM UM CACHORRO
+
+
+a) Sendo assim, é correto afirmar que
+b) Kelly não mora no 1º andar.
+c) Bete tem um gato.
+d) Joana mora no 3º andar e tem um gato.
+e) O gato é o animal de estimação da menina que mora no 1º
+andar.
+f) Yara mora no 4º andar e tem um cachorro.
+
+RESPOSTA: Resposta correta é a F.
+
+
+
+
+
+2) Vamos praticar a tabela verdade
+
+P | Q |P OR Q| P AND Q |P NOT |
+V | V |  V   |    V    |   F  |
+V | F |  V   |    F    |   F  |
+F | V |  V   |    F    |   V  |
+F | F |  F   |    F    |   V  |
+
+
+
+
+
+
+3) Quando chove, o gato fica no quarto ou no sótão.
+Quando chove, o gato fica no quarto ou no sótão.
+Quando o gato está no quarto, o rato está em sua toca, e o queijo,
+na geladeira.
+Se o queijo está sobre a mesa e o gato no sótão, então o rato está
+no quarto.
+Agora está chovendo e o queijo está sobre a mesa.
+Então onde estão o gato e o rato?
+
+RESPOSTA:  Gato no sótão, Rato no quarto. 
+
+
+
+
+
+4) Quatro amigas combinaram de aproveitar o dia de Sol na piscina.
+Elas estão lado a lado, prontas para mergulharem. Cada uma está
+com um maiô de uma cor e está usando um protetor solar de
+determinado fator de proteção (FPS). Cabe a você seguir as dicas
+para encontrar os gostos e as características delas.
+
+Na terceira posição está a menina que gosta de cachorros.
+Quem gosta de peixes está em uma das pontas.
+A garota que gosta de Gatos está na primeira posição.
+Ana usa protetor solar de FPS 50.
+Na segunda posição está a menina que usa filtro solar com FPS 55.
+A garota mais nova está ao lado da que usa protetor solar de menor FPS.
+Quem gosta de suco de Morango está na quarta posição.
+A menina que gosta de suco de maracujá está ao lado da que gosta de
+pássaros.
+A menina que gosta de limonada está ao lado da que gosta de suco de
+maracujá.
+Quem gosta de suco de laranja está em uma das pontas.
+A menina de maiô Azul está em algum lugar à esquerda da menina de 9
+anos.
+A garota de 8 anos está na quarta posição.
+A garota de 11 anos está em uma das pontas.
+Vivian gosta de Pássaros.
+Raquel está na primeira posição.
+A menina de maiô verde está na quarta posição.
+A menina de maiô Branco está em uma das pontas
+
+RESPOSTA: 
+Menina 01 - Raquel - Maio Branco - FPS 45  - 11 anos - Suco de Laranja - Gato
+Menina 02 - Vivian - Maio Azul - FPS 55 - 10 anos - Suco Limonada - passarinho
+Menina 03 - Bruna - Maio Amarelo - FPS 40 - 9 anos - Suco maracujá - Cachorro 
+Menina 04 - Ana - Maio Verde - FPS 50 - 8 anos - Suco de Morango - Peixe
