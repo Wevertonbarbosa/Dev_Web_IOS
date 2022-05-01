@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parte 2 Framework Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-info bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Well Academy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Treinos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Horários
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Manhã das 06h ás 12h</a></li>
+                                <li><a class="dropdown-item" href="#">Tarde das 13h ás 18h</a></li>
+                                <li><a class="dropdown-item" href="#">Noite das 19h ás 23h</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid py-5 bg-info">
+            <h1 class="display-8 fw-bold text-start p-2 fst-italic">Well Academy</h1>
+            <p class="lead text-white  mt-3">Deseja desenvolver seus músculos com grandes profissionais da área? Venha
+                já conhecer nossos serviços</p>
+
+        </div>
+    </header>
+
+    <section class="container">
+
+        <h2
+            class="text-center fw-bold fs-4 p-4 text-info fst-italic bg-dark mb-3 rounded-pill border border-info border-2">
+            Deixe seus dados e entraremos em contato.
+        </h2>
+        <!-- Formulário com  (text email textarea) -->
+        <form action="#">
+            <label class="form-label p-2">Nome:</label>
+            <input type="text" class="form-control" placeholder="Nome">
+
+            <label class="form-label p-2">Sobrenome:</label>
+            <input type="text" class="form-control form-control-sm" placeholder="Sobrenome">
+
+            <label class="form-label p-2">E-mail:</label>
+            <input type="email" class="form-control form-control" placeholder="Email">
+
+            <label class="p-2">Avaliação:</label>
+            <textarea class="form-control" placeholder="Mensagem"></textarea>
+            <br>
+            <hr>
+
+
+            <!-- campo de seleção-->
+            <h3 class="text-center fst-italic bg-info p-2"><em> Corpo </em> </h3>
+            <label class="pb-4">Avaliação Física</label>
+
+            <select name="" id="" class="form-control">
+                <option value="emagrecer">Emagrecer</option>
+                <option value="ganharMassa">Ganhar massa</option>
+                <option value="saúde">Saúde</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br>
+            <!-- lista de dados-->
+            <label for="exampleDataList" class="form-label"> <em> Unidade de treino</em> </label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Digite uma cidade...">
+
+            <datalist id="datalistOptions">
+                <option value="Well Santana"></option>
+                <option value="Well Alpha"></option>
+                <option value="Well Brooklin"></option>
+                <option value="Well Perdizes"></option>
+                <option value="Well Alfa"></option>
+                <option value="Outro"></option>
+            </datalist>
+            <br><br>
+
+            <!--Enviar Arquivos-->
+            <label class="form-label">Enviar Foto do Corpo</label>
+            <input type="file">
+            <br>
+            <span class="form-text">
+                Apenas arquivos png e jpg.
+            </span>
+            <br>
+            <hr>
+            <!--Paletas de Cores-->
+            <h3 class="text-center p-2 bg-info"> <em> Promoção das Pulseiras de treinos!</em> </h3>
+            <label for="exampleColorInput" class="form-label fst-italic"> Selecione a Cor da Pulseira</label>
+            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#021BFC"
+                title="Escolha a sua Cor">
+            <br>
+            <!--Botão-->
+            <button type="submit" class="btn-outline-secondary btn-lg text-primary">Enviar</button>
+            <br>
+            <hr>
+        </form>
+
+        <!--Tabelas-->
+        <table class="table table-striped table-hover table-borderd bg-info mt-5">
+            <h4 class="text-center"> <em> Dados mensais</em> </h4>
+            <thead>
+                <tr>
+                    <th scope="col"> <em> Alunos</em> </th>
+                    <th scope="col"> <em> Nome </em></th>
+                    <th scope="col"><em>Peso</em></th>
+                    <th scope="col"> <em>Idade</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Jonas</td>
+                    <td>57kg</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Roger</td>
+                    <td>79kg</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Vitor</td>
+                    <td>70kg</td>
+                    <td>17</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered table-hover table-sm">
+            <caption>Estimativa de 2022</caption>
+            <thead>
+                <tr>
+                    <th scope="col"><em> Mensalidade</em></th>
+                    <th scope="col"> <em>Valor</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                    <td>Semanal</td>
+                    <td>R$25,00</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Mensal</td>
+                    <td>R$70,00</td>
+
+                </tr>
+                <tr class="table-danger">
+                    <td>Semestral</td>
+                    <td>R$200,00</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>Vitalício</td>
+                    <td>R$750,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Lista com botões -->
+        <div class="list-group">
+            <h4 class="text-center pb-4"> <em> Melhor dia para treinar</em> </h4>
+            <button type="button" class="list-group-item list-group-item-action " aria-current="true">
+                Segunda-Feira
+            </button>
+            <button type="button" class="list-group-item list-group-item-action">Quarta-Feira</button>
+            <button type="button" class="list-group-item list-group-item-action">Sexta-Feira</button>
+            <button type="button" class="list-group-item list-group-item-action">Sábado</button>
+        </div>
+        <br><br>
+        <!-- Lista com efeito flush -->
+
+        <div class="container">
+            <h4 class="text-center"> <em> Treinos</em> </h4>
+            <ul class="list-group list-group-flush fw-bold">
+                <li class="list-group-item">Segunda-Feira (Perna e Ombro)</li>
+                <li class="list-group-item">Quarta-Feira (Peito e tricípis)</li>
+                <li class="list-group-item">Sexta-Feira (Costas e Bicipís)</li>
+                <li class="list-group-item">Sábado (Esteira)</li>
+            </ul>
+            <br><br>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://treinomestre.com.br/wp-content/uploads/2014/08/Treino-de-musculacao-para-emagrecer.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> <em> Treino de Barra</em></h5>
+                <p class="card-text"> Específico para atingir os músculos das costas, com grande tensão assim levando a
+                    exaustão e causando micro lesões para hipertrofias na região das costas. </p>
+                <a href="#" class="btn btn-dark">Aprenda o Treino</a>
+            </div>
+        </div>
+<br><br>
+    </section>
+
+
+    <footer class="text-center fw-bold"> <small> 2022 | Empresas Well & Well | Todos os direitos reservados &copy;</small> </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
