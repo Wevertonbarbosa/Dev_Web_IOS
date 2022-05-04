@@ -31,4 +31,22 @@ convidados[2] = 'Silvana';
 console.log(`Inserindo em uma determinada posição:  ${convidados}`);
 
 //template script
-console.log(`Ficaram 4 pessoas na festa, que são: ${convidados}`)
+console.log(`Ficaram 4 pessoas na festa, que são: ${convidados}`);
+
+
+
+//Novo Array Parte 2
+let grifes = ['Sergio K' , 'Giorgio Armani', 'Balmain', 'Lacoste', 'Mary kay'];
+console.log (`Novo Array Parte 2 : ${grifes}`);
+
+//Método Splice
+grifes.splice(1, 0, 'Nike', 'Carolina Herrera');
+console.log (`Método Splice : ${grifes}`);
+
+//Método Sort
+grifes.sort();
+console.log(`Método Sort : ${grifes}`);
+
+//Template String
+console.log(`Antes : Sergio K, Giorgio Armani, Balmain, Lacoste, Mary Kay `);
+console.log(`Depois : ${grifes}`);
