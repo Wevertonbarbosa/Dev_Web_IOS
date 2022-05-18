@@ -47,44 +47,92 @@ let colaboradores = [
 
 
 //
-let contratos = [
-    colaboradores[0].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[0].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[0].nome}`),
-    colaboradores[1].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[1].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[1].nome}`), 
-    colaboradores[2].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[2].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[2].nome}`),
-    colaboradores[3].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[3].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[3].nome}`),
-    colaboradores[4].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[4].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[4].nome}`)
-]
+// let contratos = [
+    // colaboradores[0].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[0].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[0].nome}`),
+    // colaboradores[1].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[1].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[1].nome}`), 
+    // colaboradores[2].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[2].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[2].nome}`),
+    // colaboradores[3].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[3].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[3].nome}`),
+    // colaboradores[4].vinculo == 'CLT' ? console.log (`É CLT, seu nome: ${colaboradores[4].nome}`) : console.log (`É PJ, seu nome: ${colaboradores[4].nome}`)
+// ]
 
 
 //Calculo da Tabela INSS
 
 let aliquota = 0
 let inss    = 0
-//Primeiro funcionário
-if (colaboradores[0].vinculo == 'PJ'){
-  var desconto = 0
-}
-else if (colaboradores[0].salario > 1212 && colaboradores[0].salario <= 2427) {
-    colaboradores[0].salario * (7.5 / 100)
-    
-
-}
-else if (colaboradores[0].salario > 1212 && colaboradores[0].salario <= 2427){
-    colaboradores[0].salario * (9.0 / 100)
-}
-else if (colaboradores[0].salario > 2427 && colaboradores[0].salario <=  3641){
-    colaboradores[0].salario * (12.0 / 100)
-}
-else if (colaboradores[0].salario > 3641 && colaboradores[0].salario <= 7087){
-    colaboradores[0].salario * (12.0 / 100)
-}
-else if (colaboradores[0].salario > 3641 && colaboradores[0].salario <= 7087){
-    colaboradores[0].salario * (14.0 / 100)
+let base = colaboradores[0].salario
+// let base = colaboradores[0].salario
+if (colaboradores[0].vinculo == 'CLT') {
 }
 else {
-    colaboradores[0].salario * (aliquota / 100)
+    console.log();
 }
-console.log(`O vinculo do ${colaboradores[0].nome} é ${colaboradores[0].vinculo} e paga de INSS ${desconto}  `);
+
+if (base <= 1.212) {
+    base * (7.5 / 100)
+    console.log(`Seu desconto é ${base}`);
+}
+
+else {
+
+} 
+
+
+if (base >= 1.212 && base <= 2.427) {
+    base * (9.0 / 100) 
+    console.log(`Seu desconto é ${base}`);
+}
+else {
+
+}
+
+if ( base >= 2427 && base <=3.641) {
+    base * (12.0 / 100)
+    console.log(`Seu desconto é ${base}`);
+}
+else if (base >= 3.641 && base >= 7.087) {
+    base * (14.0 / 100)
+    console.log(`Seu desconto é ${base}`);   
+}
+else {
+    base * (aliquota)
+console.log(`Seu desconto é ${base}`);
+}
+
+
+
+
+
+
+
+
+
+
+
+//Primeiro funcionário
+// if (colaboradores[0].vinculo == 'PJ'){
+//   var desconto = 0
+// }
+// else if (colaboradores[0].salario > 1212 && colaboradores[0].salario <= 2427) {
+//     colaboradores[0].salario * (7.5 / 100)
+    
+// }
+// else if (colaboradores[0].salario > 1212 && colaboradores[0].salario <= 2427){
+//     colaboradores[0].salario * (9.0 / 100)
+// }
+// else if (colaboradores[0].salario > 2427 && colaboradores[0].salario <=  3641){
+//     colaboradores[0].salario * (12.0 / 100)
+// }
+// else if (colaboradores[0].salario > 3641 && colaboradores[0].salario <= 7087){
+//     colaboradores[0].salario * (12.0 / 100)
+// }
+// else if (colaboradores[0].salario > 3641 && colaboradores[0].salario <= 7087){
+//     colaboradores[0].salario * (14.0 / 100)
+// }
+// else {
+//     colaboradores[0].salario * (aliquota / 100)
+// }
+// console.log(`O vinculo do ${colaboradores[0].nome} é ${colaboradores[0].vinculo} e paga de INSS ${desconto}  `);
 // inss = colaboradores[0].salario * (aliquota /100)
 
 
