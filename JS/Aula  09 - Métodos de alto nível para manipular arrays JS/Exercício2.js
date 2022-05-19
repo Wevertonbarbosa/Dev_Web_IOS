@@ -16,9 +16,7 @@ const anos = alunos.map((age)=>{
 })
 console.log(anos);
 
-function tabela(c) {
-    if (c == '2°B'|| c== '2°C') {
-        console.log(`Turmas ${c}`);
-    }
+let filtro_turma = alunos.filter ((turma2)=>{
+
     
-}
+})
