@@ -1,7 +1,6 @@
 window.alert("Olá Professor");
 
 document.title = 'Treino DOM';
-//Criei a Section com uma variavel utilizando (createElement)
 let sessao = document.createElement('section');
 sessao.innerHTML  
 document.body.appendChild(sessao);
@@ -17,15 +16,15 @@ sessao.innerHTML
 document.body.appendChild(artigo);
 
 let titulo2 = document.createElement('h1');
-titulo2.innerHTML = 'Muito bom estudar!' 
+titulo2.innerHTML = 'Muito bom estudar!'; 
 artigo.appendChild(titulo2);
-titulo2.style.fontSize = '20px'
+titulo2.style.fontSize = '20px';
 
 let paragrafo = document.createElement('P');
 paragrafo.innerHTML = 'Obrigado Professor Rafael';
 artigo.appendChild(paragrafo);
 titulo.style.borderBottom = 'solid 4px 	#000';
-titulo.style.fontSize = '15px'
+titulo.style.fontSize = '15px';
 
 
 
