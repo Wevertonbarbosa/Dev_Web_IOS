@@ -34,7 +34,7 @@ for (let i = 0; i < items.length; i++) {
 let li = document.getElementsByTagName('li');
 console.log(li);
 
-//Utilizando O incremento (+=2) isto pega todos os numéros pares mediante a lógica pois está aplicando a estilização de 2 em 2
+//Utilizando O incremento (+=2) isto pega todos os numéros pares mediante a lógica pois está aplicando a estilização de 2 em 2 e está contando de 2 em 2
 for (let i = 0; i < li.length; i+=2) {
     li[i].style.backgroundColor = 'pink'
 }
