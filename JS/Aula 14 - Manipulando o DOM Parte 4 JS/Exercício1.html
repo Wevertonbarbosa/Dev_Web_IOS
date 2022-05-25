@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 14 DOM parte 4 JS</title>
+    <link rel="stylesheet" href="Exercício1.css">
+</head>
+
+<body>
+    <header>
+        <h1>Candidatos do IOS</h1>
+    </header>
+    <section class="container">
+        <form class="meuForm">
+            <h1>Adicionar Aluno</h1>
+            
+            <div class="mensagem"></div>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="name" required />
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" required />
+            </div>
+
+            <div class="resposta_email"></div>
+
+            <div>
+                <label for="dataNasc">Data de Nascimento</label>
+                <input type="text" id="dataNasc" required />
+            </div>
+
+            <div>
+                <label for="list">Lista:</label>
+                <select name="alunos_list" id="list">
+                    <option value="--">---</option>
+                    <option value="1">Aluno 1</option>
+                    <option value="2">Aluno 2</option>
+                    <option value="3">Aluno 3</option>
+                    <option value="4">Aluno 4</option>
+                </select>
+            </div>
+
+
+            <div>
+                <input class="btn" type="submit" value="Adicionar">
+                <input class="btn" type="submit" value="Excluir" />
+            </div>
+        </form>
+        <ul id="end_line"></ul>
+    </section>
+
+    <script src="Exercício1.js"></script>
+</body>
+
+</html>
