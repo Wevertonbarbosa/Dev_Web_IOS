@@ -1,54 +1,80 @@
 class Pessoa {
     constructor(nome, dataNascimento) {
-    this.nome = nome;
-    this.dataNascimento = dataNascimento;
+        this.nome = nome;
+        this.dataNascimento = new Date(dataNascimento);
     }
 
-    
+    getIdade() {
+        return anoCompletoAtual - this.dataNascimento.getFullYear();
+    }
+
+    getDiaAtual() {
+        return this.dataNascimento.getDate();
+    }
+
+    getMes () {
+        return this.dataNascimento.getMonth();
+    }
+}
+let ano = new Date();
+let anoCompletoAtual = ano.getFullYear();
+
+let pessoas = new Array(10);
+pessoas[0] = new Pessoa('Weverton', '2000 06 04');
+pessoas[1] = new Pessoa('Vitor', '2007 02 13');
+pessoas[2] = new Pessoa('Rivelino', '2002 08 24');
+pessoas[3] = new Pessoa('Thomas', '2001 03 14');
+pessoas[4] = new Pessoa('Sireneu', '2003 02 20');
+pessoas[5] = new Pessoa('Jatobá', '1999 07 16');
+pessoas[6] = new Pessoa('Neuza', '2005 04 05');
+pessoas[7] = new Pessoa('Marcinho', '2000 10 22');
+pessoas[8] = new Pessoa('Kelly', '2001 05 17');
+pessoas[9] = new Pessoa('Nilto', '2002 05 12');
+
+let dias = ano.getDate();
+let mes = ano.getMonth();
+
+Pessoa.prototype.getNiver = function () {
+   
+
+};
+
+if (pessoas[0].getDiaAtual() != dias && mes > pessoas[0].getMes())  {
+    console.log('Já');
+
+} else if (pessoas[0].getDiaAtual() == dias && mes == pessoas[0].getMes()) {
+    console.log('Já');
+
+} else if (pessoas[0].getDiaAtual() < dias && mes == pessoas[0].getMes()){
+    console.log('Já');
+
+} else {
+    console.log('Ainda não');
 }
 
-let pessoas = new Array(10)
-pessoas[0] = new Pessoa ('Weverton');
-pessoas[1] = new Pessoa ('Luiz');
-pessoas[2] = new Pessoa ('Pablo');
-pessoas[3] = new Pessoa ('Ronaldo');
-pessoas[4] = new Pessoa ('Bruno');
-pessoas[5] = new Pessoa ( 'Mario');
-pessoas[6] = new Pessoa ('Rivelino');
-pessoas[7] = new Pessoa ('Silviano');
-pessoas[8] = new Pessoa ('Daniel');
-pessoas[9] = new Pessoa ('Billy');
-
-let datas = new Array (10)
-datas[0] = new Pessoa('2000 06 04');
-datas[1] = new Pessoa('2002 07 30');
-datas[2] = new Pessoa('1999 05 18');
-datas[3] = new Pessoa('2005 03 20');
-datas[4] = new Pessoa('2000 08 15');
-datas[5] = new Pessoa('2005 07 25');
-datas[6] = new Pessoa('1998 05 01');
-datas[7] = new Pessoa('2007 08 27');
-datas[8] = new Pessoa('1995 10 05');
-datas[9] = new Pessoa('2001 11 29');
 
 
 
 
 
 
-// let calculo = pessoas[0].dataNascimento
-// let separador = calculo.split(' ')
+
+// console.log(pessoas[0].getNiver());
 
 
 
 
-let data = new Date();
-let idade = data.getFullYear();
 
-let receber = datas.filter((i)=>{
-    i.match('20')
-});
 
-console.log(receber);
+
+
+
+
+
+
+// for (let i = 0; i < pessoas.length; i++) {
+//     console.log(`${pessoas[i].nome} tem ${pessoas[i].getIdade()} e ${pessoas[i].getNiver()} fez aniversário esse ano`);;
+// }
+
 
 
