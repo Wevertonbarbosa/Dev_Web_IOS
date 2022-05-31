@@ -5,7 +5,29 @@ class Pessoa {
     }
 
     getIdade() {
-        return anoCompletoAtual - this.dataNascimento.getFullYear();
+
+        let todos;
+        let nãoFez
+        if (this.dataNascimento.getDate() != dias && mes > this.dataNascimento.getMonth())  {
+            todos = anoCompletoAtual - this.dataNascimento.getFullYear();
+            // console.log('Já');
+            return todos + 'Já'
+        
+        } else if (this.dataNascimento.getDate() == dias && mes ==this.dataNascimento.getMonth()) {
+            // console.log('Já');
+            return anoCompletoAtual - this.dataNascimento.getFullYear();
+
+        } else if (this.dataNascimento.getDate() < dias && mes == this.dataNascimento.getMonth()){
+            // console.log('Já');
+            return anoCompletoAtual - this.dataNascimento.getFullYear();
+        
+        } else {
+            // console.log('Ainda não');
+            return anoCompletoAtual - this.dataNascimento.getFullYear() - 1;
+        }
+        
+        let recebe = anoCompletoAtual - this.dataNascimento.getFullYear() - 1;
+        let fez = anoCompletoAtual - this.dataNascimento.getFullYear()
     }
 
     getDiaAtual() {
@@ -15,7 +37,10 @@ class Pessoa {
     getMes () {
         return this.dataNascimento.getMonth();
     }
+
 }
+
+
 let ano = new Date();
 let anoCompletoAtual = ano.getFullYear();
 
@@ -34,32 +59,45 @@ pessoas[9] = new Pessoa('Nilto', '2002 05 12');
 let dias = ano.getDate();
 let mes = ano.getMonth();
 
-Pessoa.prototype.getNiver = function () {
-   
 
-};
+// console.log(pessoas[0].getIdade());
 
-if (pessoas[0].getDiaAtual() != dias && mes > pessoas[0].getMes())  {
-    console.log('Já');
 
-} else if (pessoas[0].getDiaAtual() == dias && mes == pessoas[0].getMes()) {
-    console.log('Já');
 
-} else if (pessoas[0].getDiaAtual() < dias && mes == pessoas[0].getMes()){
-    console.log('Já');
+// Pessoa.prototype.getNiver = function () {
 
-} else {
-    console.log('Ainda não');
+//     if (pessoas[0].getDiaAtual() != dias && mes > pessoas[0].getMes())  {
+//         console.log('Já');
+    
+//     } else if (pessoas[0].getDiaAtual() == dias && mes == pessoas[0].getMes()) {
+//         console.log('Já');
+    
+//     } else if (pessoas[0].getDiaAtual() < dias && mes == pessoas[0].getMes()){
+//         console.log('Já');
+//     } else {
+//         console.log('Ainda não');
+//     }
+
+// };
+
+for (let i = 0; i < pessoas.length; i++) {
+    console.log(`${pessoas[i].nome} tem ${pessoas[i].getIdade()}`);
+    
 }
 
 
 
 
+// console.log(Pessoa.prototype.getNiver());
 
 
 
 
-// console.log(pessoas[0].getNiver());
+
+
+
+
+
 
 
 
