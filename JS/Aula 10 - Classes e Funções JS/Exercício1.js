@@ -7,18 +7,20 @@ class Pessoa {
     getIdade() {
 
         let todos;
-        let nãoFez
+        let nãoFez;
+
         if (this.dataNascimento.getDate() != dias && mes > this.dataNascimento.getMonth())  {
+            
             todos = anoCompletoAtual - this.dataNascimento.getFullYear();
-            // console.log('Já');
-            return todos + 'Já'
+            
+            return todos + 'Já Fez Aniversário'
         
         } else if (this.dataNascimento.getDate() == dias && mes ==this.dataNascimento.getMonth()) {
-            // console.log('Já');
+            
             return anoCompletoAtual - this.dataNascimento.getFullYear();
 
         } else if (this.dataNascimento.getDate() < dias && mes == this.dataNascimento.getMonth()){
-            // console.log('Já');
+            
             return anoCompletoAtual - this.dataNascimento.getFullYear();
         
         } else {
@@ -37,6 +39,7 @@ class Pessoa {
     getMes () {
         return this.dataNascimento.getMonth();
     }
+
 
 }
 
@@ -59,8 +62,6 @@ pessoas[9] = new Pessoa('Nilto', '2002 05 12');
 let dias = ano.getDate();
 let mes = ano.getMonth();
 
-
-// console.log(pessoas[0].getIdade());
 
 
 
