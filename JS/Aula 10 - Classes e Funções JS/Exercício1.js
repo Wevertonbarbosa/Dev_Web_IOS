@@ -6,14 +6,11 @@ class Pessoa {
 
     getIdade() {
 
-        let todos;
-        let nãoFez;
 
         if (this.dataNascimento.getDate() != dias && mes > this.dataNascimento.getMonth())  {
             
-            todos = anoCompletoAtual - this.dataNascimento.getFullYear();
-            
-            return todos + 'Já Fez Aniversário'
+            return anoCompletoAtual - this.dataNascimento.getFullYear();
+    
         
         } else if (this.dataNascimento.getDate() == dias && mes ==this.dataNascimento.getMonth()) {
             
@@ -24,20 +21,10 @@ class Pessoa {
             return anoCompletoAtual - this.dataNascimento.getFullYear();
         
         } else {
-            // console.log('Ainda não');
+            
             return anoCompletoAtual - this.dataNascimento.getFullYear() - 1;
         }
         
-        let recebe = anoCompletoAtual - this.dataNascimento.getFullYear() - 1;
-        let fez = anoCompletoAtual - this.dataNascimento.getFullYear()
-    }
-
-    getDiaAtual() {
-        return this.dataNascimento.getDate();
-    }
-
-    getMes () {
-        return this.dataNascimento.getMonth();
     }
 
 
@@ -65,31 +52,35 @@ let mes = ano.getMonth();
 
 
 
-// Pessoa.prototype.getNiver = function () {
+Pessoa.prototype.getNiver = function () {
+    let retorno;
 
-//     if (pessoas[0].getDiaAtual() != dias && mes > pessoas[0].getMes())  {
-//         console.log('Já');
+    if (this.dataNascimento.getDate() != dias && mes > this.dataNascimento.getMonth())  {
+        retorno ='Já fez aniversário';
     
-//     } else if (pessoas[0].getDiaAtual() == dias && mes == pessoas[0].getMes()) {
-//         console.log('Já');
+    } else if (this.dataNascimento.getDate()  == dias && mes == this.dataNascimento.getMonth()) {
+        retorno ='Já fez aniversário';
     
-//     } else if (pessoas[0].getDiaAtual() < dias && mes == pessoas[0].getMes()){
-//         console.log('Já');
-//     } else {
-//         console.log('Ainda não');
-//     }
-
-// };
+    } else if (this.dataNascimento.getDate()  < dias && mes == this.dataNascimento.getMonth()){
+        retorno ='Já fez aniversário';
+    } else {
+        retorno = 'Ainda não fez Aniversário';
+    }
+    return retorno;
+};
 
 for (let i = 0; i < pessoas.length; i++) {
-    console.log(`${pessoas[i].nome} tem ${pessoas[i].getIdade()}`);
-    
+    console.log(`${pessoas[i].nome} tem ${pessoas[i].getIdade()} ${pessoas[i].getNiver()}`);
 }
 
 
 
 
-// console.log(Pessoa.prototype.getNiver());
+
+
+
+
+
 
 
 
