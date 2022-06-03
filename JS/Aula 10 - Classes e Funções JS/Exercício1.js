@@ -51,7 +51,6 @@ let mes = ano.getMonth();
 
 
 
-
 Pessoa.prototype.getNiver = function () {
     let retorno;
 
@@ -71,7 +70,7 @@ Pessoa.prototype.getNiver = function () {
 
 for (let i = 0; i < pessoas.length; i++) {
     console.log(`${pessoas[i].nome} tem ${pessoas[i].getIdade()} ${pessoas[i].getNiver()}`);
-}
+};
 
 
 
