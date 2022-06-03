@@ -1,13 +1,14 @@
 
-//Estilização H1
+//Estilização H1 de inicio
 let myh1 = document.getElementById('inicial');
 myh1.style.textAlign = 'center';
 myh1.style.fontSize = '40 px';
-myh1.style.borderBottom = 'solid 4px black';
+myh1.style.borderBottom = 'solid 4px #c0c0c0';
 myh1.style.color = '#c0c0c0';
 
 //Trouxe meus botões
 let mybtn = document.getElementsByClassName('B_12');
+
 //criando um laço de repetição para percorrer todos os botões e inserir estilos neles 
 for(i=0; i < mybtn.length; i++) {
     mybtn[i].style.border = 'solid 2px #D9BC66';
@@ -16,6 +17,7 @@ for(i=0; i < mybtn.length; i++) {
     mybtn[i].style.padding = '.5rem';
 }
 
+//Criando uma função no evento onclick cor_img (o que vai acontecer logo depois de clicar no botão)
 const cor_img = () => {
     // inserir a imagem na body!
     let imgcolar = document.createElement('img');
@@ -28,6 +30,7 @@ const cor_img = () => {
 
 };
 
+//Criando uma função no evento onclick informacao (o que vai acontecer logo depois de clicar no botão)
 const informacao = () => {
     //criando o prompt
     let msg = prompt ('     Bem Vindo!\n Por favor Insira o seu nome.');
@@ -42,22 +45,42 @@ const informacao = () => {
 
 };
 
+//Criando uma função no evento onclick tabela (o que vai acontecer logo depois de clicar no botão)
 const tabela = () => {
     //Criação do prompt
-    let tab = Number(prompt ('Insera um número para a tabela.'));
-   
+    let tab = prompt('Insira um número para a tabuada.');
+
     // Pegando a informação do Prompt e operando a tabela.
     let n = 0
-    if (tab === Number) {
-        while (n < 10) {
-            let tudo = tab * n
-            console.log(`${tab} X ${n} = ${tudo}`);
-            n++
-        }
 
+    //A função isNaN() determina se o valor é NaN ou não
+    if (isNaN(tab)) {
+
+        
     } else {
-        console.log('Você não inseriu um número \n Por favor insira um número.');
-    }
-    
-};
 
+        //H1 da tabuada 
+        let letras = document.createElement ('h1');
+            letras.innerHTML = `Tabuada do ${tab}`;
+            document.body.appendChild (letras);
+            letras.style.display = 'flex';
+            letras.style.fontSize = '30px';
+            letras.style.borderBottom = 'solid 3px #c0c0c0';
+            letras.style.margin = '10px 39vw';
+            letras.style.color = '#c0c0c0';
+            letras.style.width = '20vw';
+            letras.style.justifyContent = 'center';
+
+        while (n <= 10) {
+            let tudo = tab * n
+            let tabuada = document.createElement('h4');
+            tabuada.innerHTML = `${tab} x ${n} = ${tudo}`;
+            tabuada.style.textAlign = 'center';
+            tabuada.style.fontSize = '25px';
+            tabuada.style.color = '#c0c0c0';
+            tabuada.style.margin = '14px';
+            document.body.appendChild (tabuada);
+            n++
+    }
+}
+};
