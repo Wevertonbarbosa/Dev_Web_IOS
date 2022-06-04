@@ -33,6 +33,8 @@ const cor_img = () => {
 };
 
 
+
+
 let text = document.createElement ('h4');
 let divTabela = document.createElement ('div');
 document.body.appendChild (divTabela);
@@ -69,7 +71,7 @@ const tabela = () => {
         //H1 da tabuada 
         
             letras.innerHTML = `Tabuada do ${tab}`;
-            document.body.appendChild (letras);
+            divTabela.appendChild (letras);
             letras.style.display = 'flex';
             letras.style.fontSize = '30px';
             letras.style.borderBottom = 'solid 3px #c0c0c0';
@@ -87,7 +89,7 @@ const tabela = () => {
             tabuada.style.fontSize = '25px';
             tabuada.style.color = '#c0c0c0';
             tabuada.style.margin = '14px';
-            document.body.appendChild (tabuada);
+            divTabela.appendChild (tabuada);
             n++
     }
 }
@@ -102,5 +104,5 @@ const reset = () => {
     divTabela.remove();
     
 };
-
+//Vinculando o Botão desfazer
 apagando.addEventListener('click', reset);
