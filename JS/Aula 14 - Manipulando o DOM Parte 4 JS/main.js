@@ -26,9 +26,7 @@ function onSubmit(e) {
 } else {
 // console.log('sucess');
 const li = document.createElement('li');
-li.appendChild(
-document.createTextNode(`${nameInput.value} : ${emailInput.value} : ${horario.value}`)
-);
+li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value} : ${horario.value}`));
 userList.appendChild(li);
 // Limpa o formulário
 nameInput.value = '';
