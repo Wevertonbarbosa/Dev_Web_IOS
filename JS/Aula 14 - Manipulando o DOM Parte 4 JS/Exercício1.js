@@ -3,7 +3,7 @@ let userName = document.getElementById('name');
 let userEmail = document.getElementById('email');
 let userDate = document.getElementById('dataNasc');
 let selecionar = document.getElementById('item');
-let conteudo = document.getElementById('formulario');
+// let conteudo = document.getElementById('formulario');
 let botaoExc = document.getElementById('btn2');
 let divMsg_name = document.getElementById('msg_invalido');
 let divMsg_email = document.getElementById('msg_erro');
@@ -19,7 +19,7 @@ let verifEmail = false;
 
 
 // Método addEventListene Quando o usuário interagir
-adicao.addEventListener('submit', adicionar);
+my_form.addEventListener('submit', adicionar);
 botaoExc.addEventListener('click', desfazer);
 
 //calculo da idade
@@ -67,8 +67,6 @@ function validadeIdade() {
         }
     
 }
-
-
 
 
 //    validar email com RegExp
