@@ -16,20 +16,22 @@
     <section style=" padding: 10px; margin: 5px; display: flex; justify-content: center; " class="container">
 
         <form id="formulario" style="padding: 20px; border: solid 2px black;" class="meuForm">
-            <h1 style="text-align: center; border: 2px solid black; border-radius: 20px; background-color:darkmagenta; color: antiquewhite;" >Adicionar Aluno</h1>
+            <h1
+                style="text-align: center; border: 2px solid black; border-radius: 20px; background-color:darkmagenta; color: antiquewhite;">
+                Cadastro Aluno</h1>
 
             <!-- nome do usuario -->
-            <div style ="margin: 15px;; padding: 10px; font-weight: bold; font-size: 20px;">
+            <div style="margin: 15px;; padding: 10px; font-weight: bold; font-size: 20px;">
                 <label for="nome">Nome:</label>
-                <input style="width: 40vw;" type="text" id="name" required />
-            
+                <input style="width: 40vw;" type="text" id="name" />
+
                 <div id="msg_invalido"></div>
             </div>
 
 
 
             <!-- email do usuario -->
-            <div style ="margin: 15px;; padding: 10px; font-weight: bold; font-size: 20px;">
+            <div style="margin: 15px;; padding: 10px; font-weight: bold; font-size: 20px;">
                 <label for="email">E-mail:</label>
                 <input style="width: 40vw;" type="email" id="email" required />
 
@@ -37,30 +39,43 @@
             </div>
 
             <!-- data de nascimento -->
-            <div style ="margin: 15px;; padding: 10px; font-weight: bold; font-size: 20px;">
+            <div style="margin: 15px;; padding: 10px; font-weight: bold; font-size: 20px;">
                 <label for="dataNasc">Data de Nascimento:</label>
-                <input  type="date" id="dataNasc" required />
+                <input type="date" id="dataNasc" required />
 
                 <div id="msg_data"></div>
             </div>
 
             <!-- Remover alguem da lista -->
-            <div style ="margin: 15px;; padding: 10px; font-weight: bold; font-size: 20px;">
-                <label for="list">Tirar da Lista:</label>
-                <input  type="number" id="item" required />
+
+            <div style="margin: 15px;; padding: 10px; font-weight: bold; font-size: 20px;">
+                <label for="Materia">Matéria:</label>
+                <select name="hours" id="Turma">
+                    <option value="--">---</option>
+                    <option value="Web">Programção Web</option>
+                    <option value="Administração">Administração</option>
+                    <option value="Ciências contábeis">Ciências contábeis</option>
+                    <option value="Aws">Aws</option>
+
+                    <div id="listMateria"></div>
+                </select>
             </div>
+
 
 
             <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
 
                 <!-- Botão add -->
-                <input style="padding: 5px; width:30vw; font-size: 15px; background: lawngreen; color:aliceblue; font-weight: bold; border: 0; margin: 5px; cursor: pointer;" id="btn1" type="submit" value="Adicionar">
+                <input
+                    style="padding: 5px; width:30vw; font-size: 15px; background: lawngreen; color:aliceblue; font-weight: bold; border: 0; margin: 5px; cursor: pointer;"
+                    id="btn1" type="submit" value="Adicionar">
                 <!-- Botão excluir -->
-                <input style="padding: 5px; width:30vw; font-size: 15px; background: red; color:aliceblue; font-weight: bold; border: 0; margin: 5px; cursor: pointer;" id="btn2" type="submit" value="Excluir" />
+                <input
+                    style="padding: 5px; width:30vw; font-size: 15px; background: red; color:aliceblue; font-weight: bold; border: 0; margin: 5px; cursor: pointer;"
+                    id="btn2" type="submit" value="Excluir" />
             </div>
 
             <ul id="informacao"></ul>
-
 
         </form>
     </section>
