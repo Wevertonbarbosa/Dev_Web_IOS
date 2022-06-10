@@ -92,7 +92,7 @@ function validacoes() {
         function desfazer() {
 
             texto.remove();
-            botaoExc.remove();
+            // botaoExc.remove();
             
         }
         //Limpando o formulário
