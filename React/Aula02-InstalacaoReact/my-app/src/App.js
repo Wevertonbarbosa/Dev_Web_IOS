@@ -1,13 +1,12 @@
-import './App.css';
+function App () {
 
-function App() {
     return (
-        <div className="App">
-            <h1>Hello World</h1>
-            <p>Essa é minha primeira aplicação React</p>
-            
+        <div>
+            <h1>Hello Word</h1>
+            <p>Essa é a minha primeira aplicação React teste</p>
         </div>
-    );
+    )
+    
 }
 
 export default App;

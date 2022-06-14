@@ -12,6 +12,7 @@ https://www.freecodecamp.org/portuguese/news/a-diferenca-entre-um-framework-e-um
 
 3º Props:
 
+
 Os Props são entradas que não podem ser alteradas, e todos os componentes obrigatoriamente, devem ler as Props e não podem alterar seus valores.
 
 https://www.freecodecamp.org/portuguese/news/componentes-funcionais-props-e-jsx-em-react-tutorial-de-react-js-para-iniciantes/
