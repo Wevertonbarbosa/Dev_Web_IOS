@@ -1,42 +1,49 @@
-const Notas_todos = () => {
-    <div>
+const Todos = () => {
+    return (
+
+    <div className="corpo">
         <table>
             <tr>
-                <th colSpan={2}>Boletim</th>
+                <th className="titulo" colSpan={2} rowSpan={9}>Boletim</th>
+            </tr>
+
+            <tr >
+                <th className="subtitulo" >Bº</th>
+                <th className="subtitulo">Notas</th>
             </tr>
 
             <tr>
-                <th>B</th>
-                <th>Notas</th>
+                <td className="conteudo">Fisica</td>
+                <td className="notas">7</td>
             </tr>
 
             <tr>
-                <td>Fisica</td>
-                <td>7</td>
+                <td className="conteudo">Biologia</td>
+                <td className="notas">8</td>
             </tr>
 
             <tr>
-                <td>Biologia</td>
-                <td>8</td>
+                <td className="conteudo">Ingles</td>
+                <td className="notas">5</td>
             </tr>
 
             <tr>
-                <td>Ingles</td>
-                <td>5</td>
+                <td className="conteudo">Matemática</td>
+                <td className="notas">10</td>
             </tr>
 
             <tr>
-                <td>Matemática</td>
-                <td>10</td>
+                <th className="titulo" colSpan={2}>Média Final:</th>
             </tr>
 
-            <tr>
-                <th colSpan={2}>Média Final:</th>
+            <tr >
+                <th className="final" colSpan={2}>{(7 + 8 + 5 + 10) / 4}</th>
+                
             </tr>
-            
-            <tr><th colSpan={2}></th></tr>
+
         </table>
-    </div>;
+    </div>
+    )
 };
 
-export default Notas_todos
+export default Todos;

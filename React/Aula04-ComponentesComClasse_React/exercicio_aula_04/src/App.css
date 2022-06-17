@@ -1,38 +1,74 @@
+body {
+  background: rgba(150, 164, 179, 0.877);
+  
+}
+
 .App {
   text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  background: white;
+  padding: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#aluno {
+  color: rgb(8, 177, 233);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#nomeAluno {
+  border-bottom: 2px solid black;
+  background: white;
+  margin-bottom: 0;
+  width: 36.7vw;
+  padding: 10px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.corpo {
+
+    display: flex;
+    justify-content: center;
+    font-family:initial;
+    font-size: 25px;
+    font-weight: bold;
+  
+}
+
+.titulo {
+
+  background: lightblue;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+.subtitulo {
+  background: darkblue;
+  color: aliceblue;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.conteudo {
+
+  background: lightgray;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  
+}
+
+.notas {
+  background: lightgrey;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.final {
+  background: rgb(48, 209, 48);
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
 }
