@@ -23,10 +23,12 @@ function App() {
             reminder: false,
         },
     ]);
+
     // Deletar tarefa
     const deletaTarefa = (id) => {
         setTasks(tasks.filter((task) => task.id !== id));
     };
+    
     // Alterar o reminder
     const mudarReminder = (id) => {
         setTasks(
