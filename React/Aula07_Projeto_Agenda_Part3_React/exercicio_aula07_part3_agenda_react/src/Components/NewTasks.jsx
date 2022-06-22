@@ -1,4 +1,6 @@
-const cabecalho = () => {
+
+const Cabecalho = () => {
+    
     return (
         <header>
             <h1>Lista de Tarefas</h1>
@@ -8,4 +10,4 @@ const cabecalho = () => {
     );
 };
 
-export default cabecalho
+export default Cabecalho
