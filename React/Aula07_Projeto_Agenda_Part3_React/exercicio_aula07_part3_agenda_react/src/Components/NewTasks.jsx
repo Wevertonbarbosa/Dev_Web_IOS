@@ -6,6 +6,7 @@ const Cabecalho = () => {
             <h1>Lista de Tarefas</h1>
 
             <input type="text" />
+            <button onClick={{}}>Adicionar Tarefas</button>
         </header>
     );
 };
