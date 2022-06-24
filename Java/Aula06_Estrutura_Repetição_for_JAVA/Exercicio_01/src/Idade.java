@@ -4,24 +4,23 @@ public class Idade {
     public static void main(String[] args) {
 
         //declaração das variaveis
-        Scanner name = new Scanner(System.in);
-        Scanner age = new Scanner(System.in);
+        Scanner info = new Scanner(System.in);
 
-
+        //Condição
         for (int i = 1; i < 5; i++ ) {
 
             System.out.println("Digite seu nome: ");
-            String yourName = name.nextLine();
+            String yourName = info.nextLine();
             System.out.println("Digite sua Idade:");
-            int idade = age.nextInt();
+            int idade = info.nextInt();
 
             System.out.println("Nome: "+yourName+" Idade: "+idade);
 
         }
 
 
-        name.close();
-        age.close();
+        info.close();
+
 
 
     }

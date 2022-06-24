@@ -38,6 +38,7 @@ public class Funcoes {
             System.out.println("Seu Número " +number+ ", Impar");
         }
 
+            info.close();
     }
 
 
