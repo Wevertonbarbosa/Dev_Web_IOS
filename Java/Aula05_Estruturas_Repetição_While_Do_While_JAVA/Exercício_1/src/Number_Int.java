@@ -4,33 +4,29 @@ public class Number_Int {
     public static void main(String[] args) {
 
         //Declaração das Variaveis
-        //int number = 0;
-        int par = 0, impar = 0, conta = 1;
+        int  fluxo = 1, parImpar = 0;
 
 
-        //Pergunta para o Usuário, declaração Scanner.
-        Scanner info = new Scanner(System.in);
+        //declaração variaveis pares e impares
+        int par = 0, impar = 0;
 
         //Aplicação da Condição
-        while (conta <= 10) {
+        while (fluxo <= 10) {
 
-            System.out.println("Digite 10 números:");
-            int recebeValue = info.nextInt();
+            Scanner info = new Scanner(System.in);
+            System.out.println("Digite 1 números:");
+            parImpar = info.nextInt();
 
-            if ( recebeValue % 2 == 0 ) {
-                System.out.println ("Esse número é par "+conta);
-                par ++;
+            if ( parImpar % 2 == 0 ) {
+                par++;
+                System.out.println("Todos os números Pares: "+par);
             }
             else {
-                System.out.println ("Esse número é Impar "+conta);
-                impar ++;
+                impar++;
+                System.out.println("Todos os números Impar: "+impar);
             }
-            System.out.println("Todos os números Pares: "+ par +" Todos os números Impar: "+ impar);
-
-            conta ++;
+            fluxo++;
         }
-
-
 
     }
 }
