@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
+
 public class Inteiros {
     public static void main ( String [] args ) {
 
         Scanner Info1 = new Scanner(System.in);
         double num1, num2, num3;
 
-        //pergunta ao usuario
+        //Pergunta ao usuário
         System.out.println ("Digite um Número:");
         num1 = Info1.nextDouble();
         System.out.println ("Digite outro Número:");
@@ -14,8 +15,7 @@ public class Inteiros {
         System.out.println ("Digite outro Número:");
         num3 = Info1.nextDouble();
 
-        //condição para mostrar entre os tres o maior e não filtra para que não haja os 3 iguais
-
+        //Condição para mostrar entre os três o maior e não filtra para que não haja os 3 iguais
         if (num1 == num2 || num1 == num3) {
             System.out.println ("Os Número são iguais");
         }
