@@ -48,9 +48,7 @@ function App() {
                     onDelete={deletaTarefa}
                     onToggle={mudarReminder}
                 />
-            ) : (
-                'Você não tem tarefas, pode tirar férias!'
-            )}
+            ) : ('Você não tem tarefas, pode tirar férias!')}
         </div>
     );
 }

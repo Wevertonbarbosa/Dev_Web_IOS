@@ -15,19 +15,19 @@ public class Inteiros {
         System.out.println ("Digite outro Número:");
         num3 = Info1.nextDouble();
 
-        //Condição para mostrar entre os três o maior e não filtra para que não haja os 3 iguais
+        //Condição para mostrar entre os três o maior e não filtra para que não haja números iguais
         if (num1 == num2 || num1 == num3) {
-            System.out.println ("Os Número são iguais");
+            System.out.println ("É necessario três números diferentes!");
         }
-        else if (num1 > num2 && num1 < num3){
-            System.out.println (num3+""+num1+""+num2);
+        else if (num1 > num2 && num1 > num3){
+            System.out.println ("O número "+num1+ ", é o maior entre os 3 número digitados");
 
         }
-        else if (num1 < num2 && num1 > num3) {
-            System.out.println (num2+""+num1+""+num3);
+        else if (num1 < num2 && num2 > num3) {
+            System.out.println ("O número "+num2+ ", é o maior entre os 3 número digitados");
         }
         else {
-            System.out.println (num1+""+num1+""+num3);
+            System.out.println ("O número "+num3+ ", é o maior entre os 3 número digitados");
         }
 
 
