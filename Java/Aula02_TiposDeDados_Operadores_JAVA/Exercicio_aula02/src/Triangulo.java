@@ -7,7 +7,7 @@ public class Triangulo {
 
         System.out.println("Escolha a altura do seu triângulo:");
         double altura = info.nextDouble();
-        System.out.println("Escolha a base do seu triângulo:");
+                                    System.out.println("Escolha a base do seu triângulo:");
         double base = info.nextDouble();
 
         double calculo = (altura * base) / 2;
