@@ -44,8 +44,8 @@ public class Banco {
                 logica = false;
             }
 
-        }
-        while (logica == true);
+        } while (logica == true);
+
 
     }
 }
