@@ -21,6 +21,6 @@ public class Armazenar {
         }
         media = logica / 10;// condição da media
 
-        System.out.println("o Menor número do array: " + menor + " O Maior número do array: " + maior + ", a Média do array: " + media);
+        System.out.println("O menor número do array: " + menor + ", O maior número do array: " + maior + ", a média do array: " + media);
     }
 }
