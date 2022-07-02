@@ -6,11 +6,12 @@ public class Banco {
     public static void main(String[] args) {
 
         Scanner info = new Scanner(System.in);
-        System.out.println("==== Banco Next ====");
-        Boolean logica = true;
+
+        Boolean logica;
 
         do {
-
+            System.out.println("\n==== Banco Next ====");
+            System.out.println("Escolha uma conta: ");
             System.out.println("1 - Conta corrente ");
             System.out.println("2 - Conta poupança");
             System.out.println("3 - Conta estudante");
@@ -36,9 +37,9 @@ public class Banco {
             }
 
             System.out.println("Deseja refazer a operação e escolher outra conta, sim ou não ?");
-            String letra = info.nextLine();
-
-            if (letra == "s" || letra == "S") {
+            char letra = info.next().charAt(0);
+            //Se usar o char em uma variavel e essa variavel for posta a uma condição é necessario usar aspas simples
+            if (letra == 's' || letra == 'S') {
                 logica = true;
             } else {
                 logica = false;
