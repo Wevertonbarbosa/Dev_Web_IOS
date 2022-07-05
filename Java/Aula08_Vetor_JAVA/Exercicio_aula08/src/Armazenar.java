@@ -9,6 +9,7 @@ public class Armazenar {
         double media = 0;
 
         for (int i = 0; i < number.length; i++) {
+
             logica += number[i]; // condição da media
 
             //Condição do menor
