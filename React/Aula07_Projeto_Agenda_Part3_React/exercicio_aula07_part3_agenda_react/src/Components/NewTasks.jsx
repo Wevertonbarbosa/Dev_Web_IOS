@@ -1,23 +1,30 @@
+import { useState } from 'react';
 
-const Cabecalho = () => {
-   
-    const [inputValue, setInputValue] = useState();
+const Cabecalho = (props) => {
+    const { save } = props;
 
-
-    const valueInput = (e) => {
-        getInputValue(e.target.value);
-    }
-
+    const [texto, getTexto] = useState('');
 
     return (
         <header>
             <h1>Lista de Tarefas</h1>
-
-            <input type="text" onChange={valueInput}/>
-            <button >Adicionar Tarefas</button>
+            <form onSubmit={(e) => e.preventDefault()}>
+                <input
+                    type="text"
+                    value={texto || ''}
+                    onChange={(e) => getTexto(e.currentTarget.value)}
+                />
+                <button
+                    onClick={() => {
+                        getTexto('');
+                        save(texto);
+                    }}
+                >
+                    Adicionar Tarefas
+                </button>
+            </form>
         </header>
     );
 };
 
-
-export default Cabecalho
+export default Cabecalho;
