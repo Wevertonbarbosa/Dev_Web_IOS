@@ -1,21 +1,44 @@
-import { FaTimes } from 'react-icons/fa';
+import { FaToggleOff } from "react-icons/fa";
+import { BsXLg } from "react-icons/bs";
 
-function List(props) {
-    const { tasks } = props;
+function TarefaOpen({taskAbertas, getTarefasAbertas, todasFechadas, closeFechadas}) {
 
-    return (
-        <div>
-            {tasks.map((tarefa, index => {
-                return (
-                    <div key={index}>
-                        <span>{tarefa}</span>
-                        <FaTimes  style={{ color: 'red', cursor: 'pointer' }} 
-                        onClick ={() => props.deletarTexto(index)} />
-                    </div>
-                );
-            })}
+    const retorna = taskAbertas.map((tasks) => {
+
+        const deleteTarefas = () => {
+            getTarefasAbertas(taskAbertas.filter((id) => tasks.id !== id.id));
+        }
+
+        const toogleOffEvent = () => {
+            
+            tasks.btnEventToogle = true;
+
+            if(tasks.btnEventToogle === true) {
+                
+                closeFechadas.push(tasks);
+                todasFechadas(closeFechadas);
+                deleteTarefas();
+            }
+        }
+
+        return (
+            <li key={tasks.id}>
+                {tasks.texto}
+                <span>
+                    <FaToggleOff onClick={toogleOffEvent} />
+                    <BsXLg onClick={deleteTarefas} />
+                </span>
+            </li>
+
+        ) 
+    }) 
+      
+    return(
+        <div className="tasksOpen">
+            <h2>Tarefas Abertas</h2>
+            <ul>{retorna}</ul>
         </div>
     )
-
 }
-export default List;
+
+export default TarefaOpen;
