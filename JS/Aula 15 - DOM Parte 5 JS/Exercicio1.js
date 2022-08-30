@@ -15,35 +15,35 @@ liTotal = document.querySelector('.liTotal');
 
 adicionarItem.addEventListener('submit', criarLista);
 
-
 i = 0;
 guardarI = [];
 
-function criarLista(e){
+function criarLista(e) {
     e.preventDefault();
-    if(itemAdicionar.value != '' && valorAdicionar.value != '' && quantidadeAdicionar.value != ''){
+    if (itemAdicionar.value != '' && valorAdicionar.value != '' && quantidadeAdicionar.value != '')
+     {
         li = document.createElement('li');
         li.className = `li`;
-        li.style.alignItems= 'center';
+        li.style.alignItems = 'center';
         li.style.display = 'inline-flex';
         lista.appendChild(li);
 
-        //item 
+        //item
         item = document.createElement('span');
         item.innerHTML = `${itemAdicionar.value}`;
         item.style.fontStyle = 'italic';
         item.style.fontWeight = 'bold';
-        item.style.fontSize = 'large' ;
+        item.style.fontSize = 'large';
         item.style.alignItems = 'center';
         li.appendChild(item);
 
-        // Valor 
+        // Valor
         valor = document.createElement('span');
         valorGuardado = valorAdicionar.value;
         valor.innerHTML = `${valorGuardado}`;
         valor.style.fontStyle = 'italic';
         valor.style.fontWeight = 'bold';
-        valor.style.fontSize = 'large' ;
+        valor.style.fontSize = 'large';
         valor.style.margin = '0 54px';
         valor.style.alignItems = 'center';
         li.appendChild(valor);
@@ -54,12 +54,12 @@ function criarLista(e){
         quantidade.innerHTML = `${quantidadeGuardada}`;
         quantidade.style.fontStyle = 'italic';
         quantidade.style.fontWeight = 'bold';
-        quantidade.style.fontSize = 'large' ;
+        quantidade.style.fontSize = 'large';
         quantidade.style.alignItems = 'center';
         quantidade.style.margin = '0 47px';
         quantidade.className = `qtd`;
         quantidade.id = `qtd${i}`;
-        li.appendChild(quantidade);        
+        li.appendChild(quantidade);
 
         botaoAumentar = document.createElement('button');
         botaoAumentar.innerHTML = '+';
@@ -70,12 +70,16 @@ function criarLista(e){
         botaoAumentar.addEventListener('click', somar);
         botaoAumentar.addEventListener('click', atualizarTotal);
 
-        function somar(e){
-            valorAntigo = e.target.nextElementSibling.nextElementSibling.nextElementSibling.textContent
-            guardarValorQuantidadeSomar = e.target.previousElementSibling.textContent
+        function somar(e) {
+            valorAntigo =
+                e.target.nextElementSibling.nextElementSibling
+                    .nextElementSibling.textContent;
+            guardarValorQuantidadeSomar =
+                e.target.previousElementSibling.textContent;
             guardarValorQuantidadeSomar++;
-            e.target.previousElementSibling.innerHTML = `${guardarValorQuantidadeSomar}`
-            e.target.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = guardarValorQuantidadeSomar*valor.textContent
+            e.target.previousElementSibling.innerHTML = `${guardarValorQuantidadeSomar}`;
+            e.target.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML =
+                guardarValorQuantidadeSomar * valor.textContent;
         }
         //Botão descremento
         botaoDiminuir = document.createElement('button');
@@ -85,12 +89,16 @@ function criarLista(e){
         li.appendChild(botaoDiminuir);
         botaoDiminuir.addEventListener('click', subtrair);
         botaoDiminuir.addEventListener('click', atualizarTotal);
-        function subtrair(e){
-            valorAntigo = e.target.nextElementSibling.nextElementSibling.textContent
-            guardarValorQuantidadeSubtrair = e.target.previousElementSibling.previousElementSibling.textContent
-            guardarValorQuantidadeSubtrair--
-            e.target.previousElementSibling.previousElementSibling.innerHTML = `${guardarValorQuantidadeSubtrair}`
-            e.target.nextElementSibling.nextElementSibling.innerHTML = guardarValorQuantidadeSubtrair*valor.textContent
+        function subtrair(e) {
+            valorAntigo =
+                e.target.nextElementSibling.nextElementSibling.textContent;
+            guardarValorQuantidadeSubtrair =
+                e.target.previousElementSibling.previousElementSibling
+                    .textContent;
+            guardarValorQuantidadeSubtrair--;
+            e.target.previousElementSibling.previousElementSibling.innerHTML = `${guardarValorQuantidadeSubtrair}`;
+            e.target.nextElementSibling.nextElementSibling.innerHTML =
+                guardarValorQuantidadeSubtrair * valor.textContent;
         }
 
         botaoExcluir = document.createElement('button');
@@ -99,19 +107,19 @@ function criarLista(e){
         li.appendChild(botaoExcluir);
         botaoExcluir.addEventListener('click', excluirLi);
         botaoExcluir.addEventListener('click', atualizarTotal);
-        function excluirLi(e){
+        function excluirLi(e) {
             e.target.parentNode.remove();
         }
 
         //Subtotal
         subtotal = document.createElement('span');
-        subtotal.innerHTML = quantidade.textContent*valor.textContent;
+        subtotal.innerHTML = quantidade.textContent * valor.textContent;
         subtotal.className = 'subtotal';
         subtotal.style.marginLeft = '80px';
         li.appendChild(subtotal);
 
-        i++
-    } else{
+        i++;
+    } else {
         alert('Preencha os campos corretamente!');
     }
 }
@@ -119,47 +127,33 @@ function criarLista(e){
 adicionarItem.addEventListener('submit', mostrarTotal);
 guardarSubtotalBotaoAdd = [];
 
-function mostrarTotal(){
-    guardarSubtotalBotaoAdd.push(parseInt(subtotal.textContent))
+function mostrarTotal() {
+    guardarSubtotalBotaoAdd.push(parseInt(subtotal.textContent));
     result = 0;
-    for(var j = 0; j < guardarSubtotalBotaoAdd.length; j++) {
+    for (var j = 0; j < guardarSubtotalBotaoAdd.length; j++) {
         result += guardarSubtotalBotaoAdd[j];
     }
     showTotal = document.createElement('li');
     showTotal.innerHTML = `R$${result},00`;
     showTotal.className = 'liTotal';
     total.appendChild(showTotal);
-    showTotal.previousElementSibling.remove()
+    showTotal.previousElementSibling.remove();
 }
 
-function atualizarTotal(e){
-    if(e.target.className === 'btn btn-info aumentar'){
-        valorNovo = e.target.nextElementSibling.nextElementSibling.nextElementSibling.textContent
-        verificarPosicaoItemRemovido = guardarSubtotalBotaoAdd.indexOf(parseInt(valorAntigo))
-        guardarSubtotalBotaoAdd.splice(verificarPosicaoItemRemovido, 1)
-        guardarSubtotalBotaoAdd.push(parseInt(valorNovo))
-
-        result = 0;
-
-        for(var j = 0; j < guardarSubtotalBotaoAdd.length; j++) {
-            result += guardarSubtotalBotaoAdd[j];
-        }
-
-        showTotal = document.createElement('li');
-        showTotal.innerHTML = `R$${result},00`;
-        showTotal.className = 'liTotal';
-        total.appendChild(showTotal);
-    
-        showTotal.previousElementSibling.remove()
-    } else if(e.target.className === 'btn btn-info diminuir'){ 
-        valorNovo = e.target.nextElementSibling.nextElementSibling.textContent
-        verificarPosicaoItemRemovido = guardarSubtotalBotaoAdd.indexOf(parseInt(valorAntigo));
+function atualizarTotal(e) {
+    if (e.target.className === 'btn btn-info aumentar') {
+        valorNovo =
+            e.target.nextElementSibling.nextElementSibling.nextElementSibling
+                .textContent;
+        verificarPosicaoItemRemovido = guardarSubtotalBotaoAdd.indexOf(
+            parseInt(valorAntigo)
+        );
         guardarSubtotalBotaoAdd.splice(verificarPosicaoItemRemovido, 1);
         guardarSubtotalBotaoAdd.push(parseInt(valorNovo));
 
         result = 0;
 
-        for(var j = 0; j < guardarSubtotalBotaoAdd.length; j++) {
+        for (var j = 0; j < guardarSubtotalBotaoAdd.length; j++) {
             result += guardarSubtotalBotaoAdd[j];
         }
 
@@ -167,15 +161,37 @@ function atualizarTotal(e){
         showTotal.innerHTML = `R$${result},00`;
         showTotal.className = 'liTotal';
         total.appendChild(showTotal);
-    
+
         showTotal.previousElementSibling.remove();
-    } else if(e.target.className == 'btn btn-danger excluir'){
-        verificarPosicaoItemRemovido = guardarSubtotalBotaoAdd.indexOf(parseInt(e.target.nextElementSibling.textContent))
+    } else if (e.target.className === 'btn btn-info diminuir') {
+        valorNovo = e.target.nextElementSibling.nextElementSibling.textContent;
+        verificarPosicaoItemRemovido = guardarSubtotalBotaoAdd.indexOf(
+            parseInt(valorAntigo)
+        );
+        guardarSubtotalBotaoAdd.splice(verificarPosicaoItemRemovido, 1);
+        guardarSubtotalBotaoAdd.push(parseInt(valorNovo));
+
+        result = 0;
+
+        for (var j = 0; j < guardarSubtotalBotaoAdd.length; j++) {
+            result += guardarSubtotalBotaoAdd[j];
+        }
+
+        showTotal = document.createElement('li');
+        showTotal.innerHTML = `R$${result},00`;
+        showTotal.className = 'liTotal';
+        total.appendChild(showTotal);
+
+        showTotal.previousElementSibling.remove();
+    } else if (e.target.className == 'btn btn-danger excluir') {
+        verificarPosicaoItemRemovido = guardarSubtotalBotaoAdd.indexOf(
+            parseInt(e.target.nextElementSibling.textContent)
+        );
         guardarSubtotalBotaoAdd.splice(verificarPosicaoItemRemovido, 1);
 
         result = 0;
 
-        for(var j = 0; j < guardarSubtotalBotaoAdd.length; j++) {
+        for (var j = 0; j < guardarSubtotalBotaoAdd.length; j++) {
             result += guardarSubtotalBotaoAdd[j];
         }
 
@@ -183,7 +199,7 @@ function atualizarTotal(e){
         showTotal.innerHTML = `R$${result},00`;
         showTotal.className = 'liTotal';
         total.appendChild(showTotal);
-    
+
         showTotal.previousElementSibling.remove();
     }
 }
